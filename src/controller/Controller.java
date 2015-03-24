@@ -19,9 +19,10 @@ public class Controller implements Initializable {
 		
 		TableView<String[]> table = creater.createTableByStringArray();
 		
-		table.setMinHeight(500);
+		table.setEditable(true);
+		pane.setMinWidth(creater.getWidth());
+		pane.setMinHeight(creater.getHeight());
 		pane.getChildren().add(table);
-        
 		System.out.println("finish");
 	}
 }
